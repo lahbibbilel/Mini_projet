@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Ajoutez un Toolbar avec des boutons de déconnexion et de redirection -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lavender"
+        android:title="@string/app_name"
+        app:titleTextColor="@android:color/white">
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/logout"
+            android:padding="20dp"
+            android:layout_gravity="end"/>
+
+        <!-- Bouton de redirection aligné à gauche -->
+        <Button
+            android:id="@+id/redirect_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/product"
+            android:padding="20dp"
+            android:layout_gravity="start"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!-- Ajoutez le RecyclerView ci-dessous -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar" />
+
+
+
+
+
+
+</RelativeLayout>
